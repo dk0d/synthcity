@@ -69,7 +69,7 @@ testing = [
 goggle = ["dgl", "torch_geometric", "torch_sparse", "torch_scatter"]
 
 [tool.pytest.ini_options]
-addopts = ["--cov synthcity --cov-report term-missing", "--verbose"]
+addopts = "--cov synthcity --cov-report term-missing --verbose"
 norecursedirs = ["dist", "build", ".tox"]
 testpaths = ["tests"]
 markers = ["slow: mark tests as slow (deselect with '-m \"not slow\"')"]
